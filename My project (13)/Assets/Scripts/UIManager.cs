@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public TMP_Text txtScore;
     public TMP_Text txtLife;
     public TMP_Text txtEnd;
+    public TMP_Text txtChave;
 
     public Image chave;
     // Start is called before the first frame update
@@ -38,9 +39,19 @@ public class UIManager : MonoBehaviour
         txtEnd.text = "You Win!";
     }
 
-    public void ChavePega()
+    public void ChavePega(int value, bool finalfase)
     {
-        chave.enabled = true;
+        if(chave.enabled == false)
+        {
+            chave.enabled = true;
+        }
+        txtChave.text = "x " + value.ToString();
+
+        if (finalfase)
+        {
+            txtChave.text = "O portal está aberto";
+        }
+
     }
     // Update is called once per frame
     void Update()

@@ -113,7 +113,8 @@ public class GameManager : MonoBehaviour
 
     public void GetKey()
     {
-        ui.ChavePega();
+        
+        ui.ChavePega(1, false);
        // ff.enabled = true;
     }
 }
