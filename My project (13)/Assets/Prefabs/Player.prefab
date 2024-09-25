@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 529265369058857325}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   maxSpeed: 8
   maxDistance: 0.17
   value: 0.92
-  isGrounded: 1
+  isGrounded: 0
 --- !u!54 &529265369058857325
 Rigidbody:
   m_ObjectHideFlags: 0

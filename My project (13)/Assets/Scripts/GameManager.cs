@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     
     public int score;
     public int life = 3;
+    public int keys = 0;
     public bool playervida;
    
 
@@ -86,6 +87,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
+                keys = 0;
                 PlayerRespawn(respawndeath);
             }
         }
