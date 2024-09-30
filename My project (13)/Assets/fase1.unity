@@ -1237,7 +1237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572048038}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.05019842, y: 0.9153649, z: -0.12065826, w: -0.38082653}
+  m_LocalRotation: {x: -0.05019842, y: 0.9153649, z: -0.12065827, w: -0.38082656}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4414,11 +4414,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5843378724123182583, guid: 67f7048abd85f534797cf52b2cfcdffa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5109883428822551869, guid: 67f7048abd85f534797cf52b2cfcdffa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1519229107}
+    - targetCorrespondingSourceObject: {fileID: 5109883428822551869, guid: 67f7048abd85f534797cf52b2cfcdffa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1519229106}
   m_SourcePrefab: {fileID: 100100000, guid: 67f7048abd85f534797cf52b2cfcdffa, type: 3}
+--- !u!1 &1519229105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5109883428822551869, guid: 67f7048abd85f534797cf52b2cfcdffa, type: 3}
+  m_PrefabInstance: {fileID: 1519229104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1519229106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519229105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cca1efd7b5921048b8cd00440907624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+--- !u!114 &1519229107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519229105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bd40c0f19af2a4daf3ca4b0aa704d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freelook: {fileID: 0}
+  force: 0
+  forceJump: 0
+  maxSpeed: 5
+  maxDistance: 1
+  value: 1
+  isGrounded: 0
 --- !u!43 &1539472962
 Mesh:
   m_ObjectHideFlags: 0
@@ -5604,7 +5648,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1539472962}
+  m_Mesh: {fileID: 1141873507}
 --- !u!33 &2085471256
 MeshFilter:
   m_ObjectHideFlags: 10
