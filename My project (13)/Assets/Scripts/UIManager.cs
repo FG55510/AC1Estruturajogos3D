@@ -10,11 +10,17 @@ public class UIManager : MonoBehaviour
     public TMP_Text txtLife;
     public TMP_Text txtChave;
     public TMP_Text txtAnuncio;
+    public TMP_Text txtfase;
 
     // Start is called before the first frame update
     void Start()
     {
         txtAnuncio.text = "";
+    }
+
+    public void Changefase(int value)
+    {
+        txtfase.text = "Fase: " + value.ToString() +"/3";
     }
     public void ChangeScore(int value)
     {
@@ -26,15 +32,10 @@ public class UIManager : MonoBehaviour
         txtLife.text = "Life: " + value.ToString();
     }
 
-    public void ChavePega(int value, bool finalfase)
+    public void Chaves(int value, int max)
     {
 
-        txtChave.text = "x " + value.ToString();
-
-        if (finalfase)
-        {
-            txtChave.text = "O portal está aberto";
-        }
+        txtChave.text = "crystais: " + value.ToString() + "/" + max.ToString();
 
     }
 

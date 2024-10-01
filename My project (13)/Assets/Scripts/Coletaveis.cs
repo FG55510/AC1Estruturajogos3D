@@ -6,13 +6,13 @@ public enum Tipocoletavel
 {
     Key,
     Score,
-    Powerup
+
 }
 public class Coletaveis : MonoBehaviour
 {
     public Tipocoletavel tipo;
     
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
         {
@@ -24,9 +24,6 @@ public class Coletaveis : MonoBehaviour
                 case Tipocoletavel.Score:
                     GameManager.Instance.SetScore(1);
                     break;
-               /* case Tipocoletavel.Powerup:
-                    GameManager.Instance.PlayerJump();
-                    break;*/
 
             }
             Destroy(gameObject);

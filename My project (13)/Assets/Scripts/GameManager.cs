@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    //public SO_GameData gameData;
+    [SerializeField] private SO_GameData gameData;
     public static UIManager ui;
-    //public NextFase ff;
+
     [SerializeField] GameObject player;
     [SerializeField] Transform respawndeath;
-    
 
+    public GameObject portal;
+    public int chavesnecessarias;
 
-
-    
+    public int fase;
     public int score;
     public int life = 3;
     public int keys = 0;
@@ -33,34 +33,29 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    public void LoadScene(string Fase)
-    {
-        SceneManager.LoadScene(Fase);
-    }
-    // Start is called before the first frame update
+    
     void Start()
     {
         ui = FindAnyObjectByType<UIManager>();
-      //  score = gameData.score;
+        score = gameData.score;
+        fase = gameData.fase;
+        ui.Changefase(fase);
+        ui.ChangeScore(score);
+        portal.SetActive(false);
 
     }
 
     public void SetScore(int value)
     {
 
-       // gameData.score += value;
-        //score = gameData.score;
+        gameData.score += value;
+        score = gameData.score;
         ui.ChangeScore(score);
     }
 
-    /*public void PlayerJump()
-    {
-        player.GetComponent<Player>().enabled = true;
-        player.GetComponent<PlayerMove>().enabled = false;
-    }*/
-
     public void MudaFase(string fase)
     {
+        gameData.fase++;
         SceneManager.LoadScene(fase);
     }
 
@@ -92,9 +87,25 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.E)) {
         Damage();
         }
-        if (Input.GetKeyUp(KeyCode.V))
-        {
-            ui.Anuncio("Liberou pulo! Pressione espaço para pular!");
+
+    }
+
+
+    public void Anuncio(string tipo)
+    {
+        switch(tipo){
+            case "pulo":
+                ui.Anuncio("Liberou pulo! Pressione espaço para pular!");
+                break;
+
+            case "chave":
+                ui.Anuncio("Fim da fase liberado! Vá ao Portal para proxima fase!");
+                break;
+
+            case "follow":
+                ui.Anuncio("Cuidado! Um inimigo está te seguindo!");
+                break ;
+
         }
     }
 
@@ -107,8 +118,12 @@ public class GameManager : MonoBehaviour
 
     public void GetKey()
     {
-        
-        ui.ChavePega(1, false);
-       // ff.enabled = true;
+        keys++;
+        ui.Chaves(keys,chavesnecessarias);
+        if (keys == chavesnecessarias)
+        {
+            portal.SetActive(true);
+            Anuncio("chave");
+        }       
     }
 }

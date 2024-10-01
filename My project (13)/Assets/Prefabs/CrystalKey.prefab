@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8212327083126355910}
   - component: {fileID: 5546129874044435323}
   - component: {fileID: 7858742709074245755}
-  - component: {fileID: 3564341379656331951}
+  - component: {fileID: 6733134566897196673}
   m_Layer: 0
   m_Name: CrystalKey
   m_TagString: Untagged
@@ -106,7 +106,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3564341379656331951
+--- !u!114 &6733134566897196673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5230365042148559443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a13a099d9e3516498a4a9d217aa1500, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b3908abd0f6f0741aab66ee183e6a7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 0
