@@ -317,6 +317,7 @@ MonoBehaviour:
   txtLife: {fileID: 3159031009493597802}
   txtChave: {fileID: 4813968198126840953}
   txtAnuncio: {fileID: 2228179019838244004}
+  txtfase: {fileID: 0}
 --- !u!1 &4130295781976282206
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +704,7 @@ GameObject:
   - component: {fileID: 1601143324698109003}
   - component: {fileID: 1639289691454897255}
   m_Layer: 5
-  m_Name: Chaves (1)
+  m_Name: Fases
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

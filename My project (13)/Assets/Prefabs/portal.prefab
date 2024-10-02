@@ -2529,7 +2529,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2066
+  m_VersionIndex: 2072
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2675,6 +2675,7 @@ GameObject:
   - component: {fileID: 4657411337226567396}
   - component: {fileID: 314237926277892061}
   - component: {fileID: 7762312744584154709}
+  - component: {fileID: 4814472294095902316}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -2909,7 +2910,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2516
+  m_VersionIndex: 2522
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3026,7 +3027,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498f1279251394f4586023f20db5448e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fase: Fase2
+  fase: YouWin
+--- !u!65 &4814472294095902316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266640071737279828}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5011468, y: 1.8075191, z: 2.0746307}
+  m_Center: {x: 1.3193192, y: 0.8943462, z: 0.638113}
 --- !u!1 &5698091120668288612
 GameObject:
   m_ObjectHideFlags: 0
