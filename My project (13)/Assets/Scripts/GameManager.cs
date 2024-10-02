@@ -36,11 +36,13 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+        keys = 0;
         ui = FindAnyObjectByType<UIManager>();
         score = gameData.score;
         fase = gameData.fase;
         ui.Changefase(fase);
         ui.ChangeScore(score);
+        ui.Chaves(keys, chavesnecessarias);
         portal.SetActive(false);
 
     }

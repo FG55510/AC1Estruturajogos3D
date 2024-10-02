@@ -44,9 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ef3b953f0050043bb8dc39e7f8c244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameData: {fileID: 0}
+  gameData: {fileID: 11400000, guid: ce467c1ca6304d941a7c7ccf80caaba9, type: 2}
   player: {fileID: 0}
   respawndeath: {fileID: 0}
+  portal: {fileID: 0}
+  chavesnecessarias: 0
   fase: 0
   score: 0
   life: 3

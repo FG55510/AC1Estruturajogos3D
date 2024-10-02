@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 51.339, y: -14.32}
-  m_SizeDelta: {x: 102.6773, y: 28.641}
+  m_AnchoredPosition: {x: 84.02374, y: -14.320007}
+  m_SizeDelta: {x: 168.0468, y: 28.641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1953728861432646622
 CanvasRenderer:
@@ -317,7 +317,7 @@ MonoBehaviour:
   txtLife: {fileID: 3159031009493597802}
   txtChave: {fileID: 4813968198126840953}
   txtAnuncio: {fileID: 2228179019838244004}
-  txtfase: {fileID: 0}
+  txtfase: {fileID: 1639289691454897255}
 --- !u!1 &4130295781976282206
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 51.339, y: -42.961}
+  m_AnchoredPosition: {x: 51.339, y: -72}
   m_SizeDelta: {x: 102.6773, y: 28.641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1601143324698109003
