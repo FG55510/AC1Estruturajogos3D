@@ -7,7 +7,6 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     public TMP_Text txtScore;
-    public TMP_Text txtLife;
     public TMP_Text txtChave;
     public TMP_Text txtAnuncio;
     public TMP_Text txtfase;
@@ -27,10 +26,6 @@ public class UIManager : MonoBehaviour
         txtScore.text = "Score: " + value.ToString();
     }
 
-    public void ChangeLife(int value)
-    {
-        txtLife.text = "Life: " + value.ToString();
-    }
 
     public void Chaves(int value, int max)
     {

@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
 {
     public Transform freelook;
     public float force;
+    public float maxSpeed = 5f;
 
     Rigidbody rb;
     float hor;
@@ -35,5 +36,9 @@ public class PlayerMove : MonoBehaviour
 
         direction = camFoward + camRight * hor;
         rb.AddForce(direction * force);
+        if (rb.velocity.magnitude > maxSpeed)
+        {
+            rb.velocity = rb.velocity.normalized * maxSpeed;
+        }
     }
 }
